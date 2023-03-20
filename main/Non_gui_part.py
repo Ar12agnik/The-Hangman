@@ -22,9 +22,11 @@ def slelect_random_word():
              'Somalia','South Africa','South Korea','South Sudan','Spain','Sri Lanka','Sudan','Suriname','Sweden','Switzerland','Syria','Taiwan','Tajikistan','Tanzania','Thailand',
              'Timor-Leste (formerly East Timor)','Togo','Tonga','Trinidad and Tobago','Tunisia','Turkey','Turkmenistan','Tuvalu','Uganda','Ukraine','United Arab Emirates (UAE)',
              'United Kingdom (UK)','United States of America (USA)','Uruguay','Uzbekistan','Vanuatu','Vatican City (Holy See)','Venezuela','Vietnam','Yemen','Zambia','Zimbabwe']
+    myWords2={"india":'country',"ferrari":'car'}
+    list=['india','ferrari']
     
-    random_items=random.choice(myWords)
-    print(random_items)
+    random_items=random.choice(list)
+    print(myWords2[random_items])
     pass 
 def check_score():
     pass#returns score (how many times won,lost)
@@ -35,5 +37,4 @@ def check_rem_attempts():
 def main():
     pass#main game(loop)
 #call take_input when input is required no need to define it it is defined in gui_part
-a=select_random_word()
-print(a)
+a=slelect_random_word()
