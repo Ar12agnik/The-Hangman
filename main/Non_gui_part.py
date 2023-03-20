@@ -1,8 +1,7 @@
 #Ayanabha
 from gui_part import *
-def slelct_random_word():
+def slelect_random_word():
     import random
-    import numpy as np
     myWords=['Apple','Apricot','Avocado','Banana','Blackberry','Blueberry','Cantaloupe','Cherry','Coconut','Cranberry','Date',
              'Dragonfruit','Elderberry','Fig','Grape','Grapefruit','Guava','Honeydew','Kiwi','Lemon','Lime','Lychee','Mango','Mandarin',
              'Melon','Mulberry','Nectarine','Orange','Papaya','Peach','Pear','Pineapple','Plum','Pomegranate','Raspberry','Strawberry',
@@ -23,7 +22,7 @@ def slelct_random_word():
              'Somalia','South Africa','South Korea','South Sudan','Spain','Sri Lanka','Sudan','Suriname','Sweden','Switzerland','Syria','Taiwan','Tajikistan','Tanzania','Thailand',
              'Timor-Leste (formerly East Timor)','Togo','Tonga','Trinidad and Tobago','Tunisia','Turkey','Turkmenistan','Tuvalu','Uganda','Ukraine','United Arab Emirates (UAE)',
              'United Kingdom (UK)','United States of America (USA)','Uruguay','Uzbekistan','Vanuatu','Vatican City (Holy See)','Venezuela','Vietnam','Yemen','Zambia','Zimbabwe']
-    myWords=np.array(myWords)
+    
     random_items=random.choice(myWords)
     print(random_items)
     pass 
@@ -36,3 +35,5 @@ def check_rem_attempts():
 def main():
     pass#main game(loop)
 #call take_input when input is required no need to define it it is defined in gui_part
+a=select_random_word()
+print(a)
