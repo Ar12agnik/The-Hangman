@@ -1,12 +1,14 @@
 #agnik part
 import pygame as pg
 import sys
-pg.init()
-WINDOW_WIDTH = 788
-WINDOW_HEIGHT = 493
+
 
 z=int(input("enter a number: "))
+
 def gui_screen(z):
+    pg.init()
+    WINDOW_WIDTH = 788
+    WINDOW_HEIGHT = 493
     screen=pg.display.set_mode((WINDOW_WIDTH,WINDOW_HEIGHT))
     screen.fill((255, 255, 255))
     while True:
